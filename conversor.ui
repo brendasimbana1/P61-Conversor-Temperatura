@@ -14,8 +14,8 @@
    <string>Conversor</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="recursos.qrc">
-    <normaloff>:/recursos/img/icono.png</normaloff>:/recursos/img/icono.png</iconset>
+   <iconset resource="resources.qrc">
+    <normaloff>:/recursos/img/frio.png</normaloff>:/recursos/img/frio.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
@@ -107,7 +107,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="recursos.qrc"/>
+  <include location="resources.qrc"/>
  </resources>
  <connections>
   <connection>
