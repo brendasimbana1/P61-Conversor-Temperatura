@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>411</width>
+    <width>624</width>
     <height>309</height>
    </rect>
   </property>
@@ -16,6 +16,9 @@
   <property name="windowIcon">
    <iconset resource="resources.qrc">
     <normaloff>:/recursos/img/frio.png</normaloff>:/recursos/img/frio.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
@@ -50,6 +53,44 @@
           <widget class="QDial" name="inCent">
            <property name="minimum">
             <number>-18</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="title">
+         <string>Kelvin</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLCDNumber" name="outKel">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(175, 219, 247);</string>
+           </property>
+           <property name="smallDecimalPoint">
+            <bool>false</bool>
+           </property>
+           <property name="value" stdset="0">
+            <double>255.000000000000000</double>
+           </property>
+           <property name="intValue" stdset="0">
+            <number>255</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDial" name="inKel">
+           <property name="minimum">
+            <number>255</number>
+           </property>
+           <property name="maximum">
+            <number>372</number>
+           </property>
+           <property name="value">
+            <number>273</number>
            </property>
           </widget>
          </item>
@@ -139,6 +180,22 @@
     <hint type="destinationlabel">
      <x>222</x>
      <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>inKel</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>outKel</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>311</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>311</x>
+     <y>94</y>
     </hint>
    </hints>
   </connection>
