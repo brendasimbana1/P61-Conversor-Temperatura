@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>recursos/img/frio.png</file>
+        <file>Conversor-Temperatura_en.qm</file>
+        <file>Conversor-Temperatura_fr_FR.qm</file>
     </qresource>
 </RCC>
