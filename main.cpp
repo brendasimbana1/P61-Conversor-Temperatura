@@ -1,3 +1,6 @@
+/*Nombre: Brenda Simbaña
+ * Programación Orientada a objetos
+*/
 #include "conversor.h"
 
 #include <QApplication>
